@@ -5,11 +5,11 @@ body {
   @apply font-sans;
 
   // Simple background with color gradient
-  @apply bg-gradient-to-b from-page-from_bg via-page-from_bg to-page-to_bg;
+  // @apply bg-gradient-to-b from-page-from_bg via-page-from_bg to-page-to_bg;
 
   // Fullscreen background image example
-  //background-image: url('../../images/background.jpg');
-  //@apply bg-center bg-cover bg-fixed;
+  background-image: url('../../images/background.png');
+  // @apply bg-center bg-cover bg-fixed;
 }
 
 a, a:link, a:visited {
@@ -33,7 +33,7 @@ main {
 #logo {
   @apply m-auto;
   @apply w-full;
-  @apply max-w-md;
+  max-width: 10em;
 }
 
 span.emoji {
