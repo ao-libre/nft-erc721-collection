@@ -9,9 +9,9 @@ const CollectionConfig: CollectionConfigInterface = {
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
-  contractName: 'YourNftToken',
-  tokenName: 'My NFT Token',
-  tokenSymbol: 'MNT',
+  contractName: 'ARGENTUMS',
+  tokenName: 'ARGENTUMS NFT',
+  tokenSymbol: 'ARGENTUMS',
   hiddenMetadataUri: 'ipfs://__CID__/hidden.json',
   maxSupply: 10000,
   whitelistSale: {
@@ -27,7 +27,7 @@ const CollectionConfig: CollectionConfigInterface = {
     maxMintAmountPerTx: 5,
   },
   contractAddress: null,
-  marketplaceIdentifier: 'my-nft-token',
+  marketplaceIdentifier: 'argentums',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
 };
