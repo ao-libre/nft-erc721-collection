@@ -9,6 +9,7 @@ export const hardhatLocal: NetworkConfigInterface = {
   blockExplorer: {
     name: 'Block explorer (not available for local chains)',
     generateContractUrl: (contractAddress: string) => `#`,
+    generateTransactionUrl: (transactionAddress: string) => `#`,
   },
 }
 
@@ -16,11 +17,22 @@ export const hardhatLocal: NetworkConfigInterface = {
  * Ethereum
  */
 export const ethereumTestnet: NetworkConfigInterface = {
+  chainId: 5,
+  symbol: 'ETH (test)',
+  blockExplorer: {
+    name: 'Etherscan (Goerli)',
+    generateContractUrl: (contractAddress: string) => `https://goerli.etherscan.io/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://goerli.etherscan.io/tx/${transactionAddress}`,
+  },
+}
+
+export const ethereumLegacyTestnet: NetworkConfigInterface = {
   chainId: 4,
   symbol: 'ETH (test)',
   blockExplorer: {
     name: 'Etherscan (Rinkeby)',
     generateContractUrl: (contractAddress: string) => `https://rinkeby.etherscan.io/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://rinkeby.etherscan.io/tx/${transactionAddress}`,
   },
 }
 
@@ -30,6 +42,7 @@ export const ethereumMainnet: NetworkConfigInterface = {
   blockExplorer: {
     name: 'Etherscan',
     generateContractUrl: (contractAddress: string) => `https://etherscan.io/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://etherscan.io/tx/${transactionAddress}`,
   },
 }
 
@@ -42,6 +55,7 @@ export const polygonTestnet: NetworkConfigInterface = {
   blockExplorer: {
     name: 'Polygonscan (Mumbai)',
     generateContractUrl: (contractAddress: string) => `https://mumbai.polygonscan.com/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://mumbai.polygonscan.com/tx/${transactionAddress}`,
   },
 }
 
@@ -51,5 +65,6 @@ export const polygonMainnet: NetworkConfigInterface = {
   blockExplorer: {
     name: 'Polygonscan',
     generateContractUrl: (contractAddress: string) => `https://polygonscan.com/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://polygonscan.com/tx/${transactionAddress}`,
   },
 }
