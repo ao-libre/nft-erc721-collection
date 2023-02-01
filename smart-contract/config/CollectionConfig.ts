@@ -13,7 +13,7 @@ const CollectionConfig: CollectionConfigInterface = {
   tokenName: 'ArgentumsCollection NFT',
   tokenSymbol: 'ArgentumsCollection',
   hiddenMetadataUri: 'https://raw.githubusercontent.com/ao-libre/nfts-assets/master/metadata/hidden.json',
-  maxSupply: 5,
+  maxSupply: 10000,
   whitelistSale: {
     price: 0.00,
     maxMintAmountPerTx: 1,
@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.03,
     maxMintAmountPerTx: 1,
   },
-  contractAddress: "0xbac5036c92ad2ae8feac87f61a8dd999735f4765",
+  contractAddress: "0x099010e1C0E193Ec050D35542DCa653F1C47b9Be",
   marketplaceIdentifier: 'argentums',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
